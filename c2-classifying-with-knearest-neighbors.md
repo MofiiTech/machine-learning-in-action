@@ -96,4 +96,4 @@ Calculate **error rate** using test set.
     ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2], 15.0*array(datingLabels), 15.0*array(datingLabels))
     ```
 
-    ![Visualing Data](../static/img/figure2-1.png)
+    ![Visualing Data](static/img/figure2-1.png)

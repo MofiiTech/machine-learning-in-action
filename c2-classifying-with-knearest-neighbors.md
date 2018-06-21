@@ -102,8 +102,16 @@ Calculate **error rate** using test set.
 
 When dealing with values that lie in different range, it's common to normalize them. Common ranges to normalize them to are 0 to 1 or -1 to 1.
 
+* Function *autoNorm()*
 
-To scale everything from 0 to 1, you need to apply the following formula:
-```Python
-newValues = (oldValue - min) / (max - min)
-```
+    ```Python
+    def autoNorm(dataSet):
+        minVals = dataSet.min(0)
+        maxVals = dataSet.max(0)
+        ranges = maxVals - minVals
+        normDataSet = zeros(shape(dataSet))
+        m = dataSet.shape[0]
+        normDataSet = dataSet - tile(minVals, (m, 1))
+        normDataSet = normDataSet/tile(ranges, (m, 1))
+        return normDataSet, ranges, minVals
+    ```

@@ -66,12 +66,13 @@ Calculate **error rate** using test set.
         classLabelVector = []
         fr = open(filename)
         index = 0
+        labels = {'didntLike': 1, 'smallDoses': 2, 'largeDoses': 3}
         for line in fr.readlines():
             line = line.strip()
             listFromLine = line.split('\t')
             returnMat[index, :] = listFromLine[0:3]
             # value is converted to integer in the book, it doesn't work on my system
-            classLabelVector.append(listFromLine[-1])
+            classLabelVector.append(labels[listFromLine[-1]])
             index += 1
         return returnMat, classLabelVector
     ```
@@ -88,3 +89,11 @@ Calculate **error rate** using test set.
     >>> ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2])
     >>> plt.show()
     ```
+
+* Customize the markers
+
+    ```Python
+    ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2], 15.0*array(datingLabels), 15.0*array(datingLabels))
+    ```
+
+    ![Visualing Data](../static/img/figure2-1.png)

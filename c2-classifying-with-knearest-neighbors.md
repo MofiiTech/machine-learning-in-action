@@ -39,6 +39,7 @@ Subtitle: Chapter 2 - Classifying with k-Nearest Neighbors
         sqDiffMat = diffMat ** 2
         sqDistances = sqDiffMat.sum(axis = 1)
         distances = sqDistances ** 0.5
+        sortedDistIndicies = distances.argsort()
         classCount = {}
         for i in range(k):
             voteIlabel = labels[sortedDistIndicies[i]]

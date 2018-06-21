@@ -97,3 +97,13 @@ Calculate **error rate** using test set.
     ```
 
     ![Visualing Data](static/img/figure2-1.png)
+
+### Prepare: normalizing numeric values
+
+When dealing with values that lie in different range, it's common to normalize them. Common ranges to normalize them to are 0 to 1 or -1 to 1.
+
+
+To scale everything from 0 to 1, you need to apply the following formula:
+```Python
+newValues = (oldValue - min) / (max - min)
+```

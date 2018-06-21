@@ -62,7 +62,7 @@ Calculate **error rate** using test set.
     def file2matrix(filename):
         fr = open(filename)
         numberOfLines = len(fr.readlines())
-        returnMat = zeros((numerOfLines, 3))
+        returnMat = zeros((numberOfLines, 3))
         classLabelVector = []
         fr = open(filename)
         index = 0
@@ -70,7 +70,21 @@ Calculate **error rate** using test set.
             line = line.strip()
             listFromLine = line.split('\t')
             returnMat[index, :] = listFromLine[0:3]
-            classLabelVector.append(int(listFromLine[-1]))
+            # value is converted to integer in the book, it doesn't work on my system
+            classLabelVector.append(listFromLine[-1])
             index += 1
         return returnMat, classLabelVector
+    ```
+
+### Analyze: creating scatter plot with Matplotlib
+
+* Plot the data in Python console
+
+    ```Python
+    >>> import matplotlib
+    >>> import matplotlib.pyplot as plt
+    >>> fig = plt.figure()
+    >>> ax = fig.add_subplot(111)
+    >>> ax.scatter(datingDataMat[:, 1], datingDataMat[:, 2])
+    >>> plt.show()
     ```

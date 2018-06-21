@@ -20,3 +20,19 @@ def classify0(inX, dataSet, labels, k):
     # in python3, iteritems() is removed and we use items() instead
     sortedClassCount = sorted(classCount.items(), key=operator.itemgetter(1), reverse=True)
     return sortedClassCount[0][0]
+
+def file2matrix(filename):
+    fr = open(filename)
+    numberOfLines = len(fr.readlines())
+    returnMat = zeros((numberOfLines, 3))
+    classLabelVector = []
+    fr = open(filename)
+    index = 0
+    labels = {'didntLike': 1, 'smallDoses': 2, 'largeDoses': 3}
+    for line in fr.readlines():
+        line = line.strip()
+        listFromLine = line.split('\t')
+        returnMat[index, :] = listFromLine[0:3]
+        classLabelVector.append(labels[listFromLine[-1]])
+        index += 1
+    return returnMat, classLabelVector

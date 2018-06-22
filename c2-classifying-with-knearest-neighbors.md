@@ -197,7 +197,7 @@ We'll take the 32x32 matrix that is each binary image and make it a 1x1024 vecto
         return returnVect
     ```
 
-## Test: kNN on handwriting digits
+### Test: kNN on handwriting digits
 
 * Function *handwritingClassTest()*
 

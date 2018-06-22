@@ -23,4 +23,4 @@ The change in the information before and after the split is known as the **infor
 
 Entropy is defined as the expected value of the information. If you're classifying something that can take on multiple values, the information for symbol x<sup>i</sup> is defined as
 
-![](static/formulas/f0301.png)
+![Definition of Entropy](static/formulas/f0301.png)

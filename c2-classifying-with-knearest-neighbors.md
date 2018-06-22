@@ -112,6 +112,10 @@ When dealing with values that lie in different range, it's common to normalize t
         normDataSet = zeros(shape(dataSet))
         m = dataSet.shape[0]
         normDataSet = dataSet - tile(minVals, (m, 1))
-        normDataSet = normDataSet/tile(ranges, (m, 1))
+        normDataSet = normDataSet/tile(ranges, (m, 1)) # element-wise division
         return normDataSet, ranges, minVals
     ```
+
+    In Numpy, / operator stands for element-wise division. You need to use *linalg.solve(matA, matB)* for matrix division.
+
+### Test: testing the classifier as a whole program

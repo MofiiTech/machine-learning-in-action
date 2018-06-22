@@ -20,3 +20,7 @@ Before we write the function *createBranch()* in Python, we need to split the da
 We choose to split our dataset in a way that makes our unorganized data more organized. One way to do this is to measure the information. Using information theory, you can measure the information before and after the split.
 
 The change in the information before and after the split is known as the **information gain**. We can split the dataset across every feature to see which split gives the highest information gain. The split with the highest information gain is the best option. The measure of information of a set is known as the **Shannon entropy**, or just **entroppy**.
+
+Entropy is defined as the expected value of the information. If you're classifying something that can take on multiple values, the information for symbol x<sup>i</sup> is defined as
+
+$l(x_i) = \log_2 p(x_i)$

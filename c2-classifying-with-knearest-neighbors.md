@@ -227,3 +227,11 @@ We'll take the 32x32 matrix that is each binary image and make it a 1x1024 vecto
         print("\nThe total number of errros is: {:d}".format(errorCount))
         print("\nThe total error rate is: {:f}".format(errorCount/float(mTest)))
     ```
+
+So many calculations make this algorithm pretty slow. This is a modification to kNN, called kD-trees, that allow us to reduce the number of calculations.
+
+## Summary
+
+The k-Nearest Neighbors algorithm is a simple and effective way to classify data. kNN is an example of instance-based learning, where you need to have instances of data close at hand to perform the machine learning algorithm. In addition, you need to calculate the distance measurement for every piece of data in the database, and this can be cumbersome.
+
+And additional drawback is that kNN doesn't give you any idea of the underlying structure of the data; you have no idea what an "average" or "examplar" instance from each class looks like. In the next chapter, we'll address this issue by exploring ways in which probability measurements can help you do classification.

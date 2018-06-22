@@ -141,7 +141,7 @@ To test the accuracy of the algorithm,  we take 90% of the existing data to trai
         print("The total error rate is: {:f}".format(errorCount / float(numTestVecs)))
     ```
 
-* Sample Output
+* Sample output
 
     ```
     >>> kNN.datingClassTest()
@@ -227,6 +227,27 @@ We'll take the 32x32 matrix that is each binary image and make it a 1x1024 vecto
                 errorCount += 1
         print("\nThe total number of errros is: {:d}".format(errorCount))
         print("\nThe total error rate is: {:f}".format(errorCount/float(mTest)))
+    ```
+
+* Sample output
+
+    ```
+    >>> kNN.handwritingClassTest()
+    The classifier came back with: 4, the real answer is: 4
+    The classifier came back with: 4, the real answer is: 4
+    The classifier came back with: 3, the real answer is: 3
+    The classifier came back with: 9, the real answer is: 9
+    The classifier came back with: 0, the real answer is: 0
+    ..
+    The classifier came back with: 1, the real answer is: 1
+    The classifier came back with: 5, the real answer is: 5
+    The classifier came back with: 4, the real answer is: 4
+    The classifier came back with: 3, the real answer is: 3
+    The classifier came back with: 3, the real answer is: 3
+
+    The total number of errros is: 11
+
+    The total error rate is: 0.011628
     ```
 
 So many calculations make this algorithm pretty slow. This is a modification to kNN, called kD-trees, that allow us to reduce the number of calculations.

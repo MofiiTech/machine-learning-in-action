@@ -1,4 +1,5 @@
 ---
+Type: Reading Notes
 Book Title: Machine Learning In Action
 Subtitle: Chapter 2 - Classifying with k-Nearest Neighbors
 ---

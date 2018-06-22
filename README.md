@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+# Notes From Machine Learning In Action
 
-You can use the [editor on GitHub](https://github.com/MofiiTech/machine-learning-in-action/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## About this book
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Check out this book on Google Books: [Machine Learning In Action](https://books.google.com/books?id=2d7RXwAACAAJ&dq=machine+learning+in+action&hl=en&sa=X&ved=0ahUKEwjj58yXzOfbAhUC7p8KHZvmAs0Q6AEIKTAA)
 
-### Markdown
+![Machine Learning In Action](cover.jpeg)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Notes
 
-```markdown
-Syntax highlighted code block
+Codes in this notebook are based on the provided codes from the [book website](https://www.manning.com/books/machine-learning-in-action). Minor modifications are made to apply these codes to Python 3.x.
 
-# Header 1
-## Header 2
-### Header 3
+## Questions
 
-- Bulleted
-- List
+> Some of my questions here.
 
-1. Numbered
-2. List
+## Contents
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MofiiTech/machine-learning-in-action/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+* [Chapter 1 - Machine Learning Basics](c1-machine-learning-basics.md)
+* [Chapter 2 - Classifying with k-Nearest Neighbors](c2-classifying-with-knearest-neighbors.md)
+* [Chapter 3 - Splitting datasets one feature at a time: decision trees](c3-decision-trees.md)

@@ -4,7 +4,7 @@ Book Title: Machine Learning In Action
 Subtitle: Chapter 3 - Splitting datasets one feature at a time: decision trees
 ---
 
-# Chapter 2 - Splitting datasets one feature at a time: decision trees
+# Chapter 3 - Splitting datasets one feature at a time: decision trees
 
 ## Tree construction
 
@@ -23,4 +23,4 @@ The change in the information before and after the split is known as the **infor
 
 Entropy is defined as the expected value of the information. If you're classifying something that can take on multiple values, the information for symbol x<sup>i</sup> is defined as
 
-![Definition of Entropy](static/formulas/f0301.png | width=250)
+![Definition of Entropy](static/formulas/f0301.png)

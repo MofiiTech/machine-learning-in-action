@@ -19,3 +19,4 @@ Codes in this notebook are based on the provided codes from the [book website](h
 * [Chapter 1 - Machine Learning Basics](c1-machine-learning-basics.md)
 * [Chapter 2 - Classifying with k-Nearest Neighbors](c2-classifying-with-knearest-neighbors.md)
 * [Chapter 3 - Splitting datasets one feature at a time: decision trees](c3-decision-trees.md)
+* [test](c3-decision-trees.ipynb)

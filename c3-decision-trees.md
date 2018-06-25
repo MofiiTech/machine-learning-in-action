@@ -24,3 +24,25 @@ The change in the information before and after the split is known as the **infor
 Entropy is defined as the expected value of the information. If you're classifying something that can take on multiple values, the information for symbol **x<sup>i</sup>** is defined as **l(x<sub>i</sub>) = log<sub>2</sub>p(x<sub>i</sub>)**, where **p(x<sub>i</sub>)** is the probability of choosing this class.
 
 When calculating entropy, you need the expected value of all the information of all possible values of our class. This is given by **H = - sum(p(x<sub>i</sub>)log<sub>2</sub>p(x<sub>i</sub>))**.
+
+* Function *calc_shannon_ent()*:
+
+    ```Python
+    def calc_shannon_ent(data_set):
+        num_entries = len(data_set)
+        label_counts = {}
+        for feat_vec in data_set:
+            current_label = feat_vec[-1]
+            if current_label not in label_counts.keys():
+                label_counts[current_label] = 0
+            label_counts[current_label] += 1
+        shannon_ent = 0.0
+        for key in label_counts:
+            prob = float(label_counts[key])/num_entries
+            shannon_ent -= prob * log(prob, 2)
+        return shannon_ent
+    ```
+
+The higher the entropy is, the more mixed up the data is. We will split the dataset in a way that will give us largest information gain.
+
+> Another common measure of disorder in a set is the **Gini impurity**, which is the probability of choosing an item from the set and the probability of that item being misclassified.

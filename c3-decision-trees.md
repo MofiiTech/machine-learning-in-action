@@ -23,4 +23,4 @@ The change in the information before and after the split is known as the **infor
 
 Entropy is defined as the expected value of the information. If you're classifying something that can take on multiple values, the information for symbol **x<sup>i</sup>** is defined as **l(x<sub>i</sub>) = log<sub>2</sub>p(x<sub>i</sub>)**, where **p(x<sub>i</sub>)** is the probability of choosing this class.
 
-When calculating entropy, you need the expected value of all the information of all possible values of our class. This is given by **H = - sum(p(x<sub>i</sub>)log<sub>2</sub>p(x<sub>i</sub>)).
+When calculating entropy, you need the expected value of all the information of all possible values of our class. This is given by **H = - sum(p(x<sub>i</sub>)log<sub>2</sub>p(x<sub>i</sub>))**.

@@ -9,8 +9,11 @@ Subtitle: Chapter 4 - Classifying with probability theory: naive Bayes
 ## Classifying with Bayesian decision thoery
 
 > Naive Bayes
+>
 > Pros: Works with a small amount of data, handles multiple classes
+>
 > Cons: Sensitive to how the input data is prepared
+>
 > Works with: Nominal values
 
 **Bayesian decision thoery**: choosing the decision with the highest probability.

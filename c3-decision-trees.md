@@ -198,7 +198,7 @@ In this way, we can **distill** the dataset into some knowledge, and we use that
 
 The **Lenses dataset** is a number of observations based on patients' eye conditions and the type of contact lenses the doctor prescribed. The classes are hard, soft, and no contact lenses. The data is from the UCI database repository and is modified slightly so that it can be displayed easier.
 
-To load the data:
+To load and classify the data:
 
 ```Python
 >>> fr = open('lenses.txt')
